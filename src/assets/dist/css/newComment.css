@@ -1,0 +1,13 @@
+.newComment input {
+  margin-top: 10px;
+  padding: 3px 5px; }
+
+.newComment input[type="text"] {
+  width: calc(100% - 84px);
+  border: 1px solid black; }
+
+.newComment input[type="submit"] {
+  margin-left: 2px;
+  width: 70px;
+  background-color: transparent;
+  border: 1px solid black; }

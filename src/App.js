@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import Routes from "./Routes";
+
 import { ApolloProvider } from "react-apollo";
 import ApolloClient from "apollo-boost";
+
+import Routes from "./Routes";
+import "./assets/dist/css/main.css";
 
 const client = new ApolloClient({
   uri: "http://localhost:4000/graphql"

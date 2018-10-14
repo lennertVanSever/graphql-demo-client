@@ -5,6 +5,7 @@
   "dependencies": {
     "apollo-boost": "^0.1.16",
     "graphql": "^14.0.2",
+    "node-sass": "^4.9.3",
     "react": "^16.5.2",
     "react-apollo": "^2.2.4",
     "react-dom": "^16.5.2",
@@ -12,6 +13,7 @@
     "react-scripts": "2.0.4"
   },
   "scripts": {
+    "build-css": "node-sass -w src/assets/sass/main.scss -o src/assets/dist/css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
