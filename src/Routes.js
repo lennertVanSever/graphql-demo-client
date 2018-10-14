@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from "react-router-dom";
-import Overview from "./components/containers/Overview";
+import { Overview } from "./components/containers";
 
 
 class Routes extends Component {
