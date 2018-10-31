@@ -1,0 +1,14 @@
+.page_header {
+  background-color: white;
+  overflow: auto;
+  border-bottom: 1px solid black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10; }
+  .page_header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 40px;
+    align-items: center; }

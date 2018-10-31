@@ -1,6 +1,6 @@
 import React from 'react';
 import { Query } from "react-apollo";
-import { Post, NewPost } from "../../constants/molecules";
+import { Post, NewPost, Header } from "../../constants/molecules";
 import query from "../../../queries/posts";
 
 function generatePosts(posts){
@@ -16,6 +16,7 @@ export default () => (
       if (error) return `Error! ${error.message}`;
       return (
         <div className="main">
+          <Header />
           <NewPost />
           {generatePosts(data.posts)}
         </div>

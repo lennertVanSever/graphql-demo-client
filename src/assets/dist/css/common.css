@@ -2,8 +2,7 @@ body {
   background-color: #f4f6f7; }
 
 .main {
-  max-width: 500px;
-  margin: 0px auto; }
+  margin-top: 50px; }
 
 .card {
   background-color: white;

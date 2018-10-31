@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from "react-router-dom";
-import { Posts } from "./components/containers";
+import { Posts, Chat } from "./components/containers";
 
 
 class Routes extends Component {
@@ -8,6 +8,7 @@ class Routes extends Component {
     return (
         <Switch>
             <Route path="/posts" component={Posts} />
+            <Route path="/chat" component={Chat} />
         </Switch>
     );
   }

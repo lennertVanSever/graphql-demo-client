@@ -52,8 +52,7 @@ body {
   background-color: #f4f6f7; }
 
 .main {
-  max-width: 500px;
-  margin: 0px auto; }
+  margin-top: 50px; }
 
 .card {
   background-color: white;
@@ -74,15 +73,18 @@ input[type="submit"] {
   font-weight: bold;
   margin-top: 2px; }
 
-.post h3 {
-  font-size: 15pt;
-  font-weight: bold;
-  color: #353535;
-  margin-bottom: 2px; }
-
-.post .comments {
-  border-top: 1px solid black;
-  margin-top: 10px; }
+.post {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 10px; }
+  .post h3 {
+    font-size: 15pt;
+    font-weight: bold;
+    color: #353535;
+    margin-bottom: 2px; }
+  .post .comments {
+    border-top: 1px solid black;
+    margin-top: 10px; }
 
 .new_post input[type="text"], .new_post textarea {
   width: calc(100% - 10px); }
@@ -103,3 +105,18 @@ input[type="submit"] {
 
 .comment {
   margin-top: 10px; }
+
+.page_header {
+  background-color: white;
+  overflow: auto;
+  border-bottom: 1px solid black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10; }
+  .page_header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 40px;
+    align-items: center; }

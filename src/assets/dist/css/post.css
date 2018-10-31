@@ -1,9 +1,12 @@
-.post h3 {
-  font-size: 15pt;
-  font-weight: bold;
-  color: #353535;
-  margin-bottom: 2px; }
-
-.post .comments {
-  border-top: 1px solid black;
-  margin-top: 10px; }
+.post {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 10px; }
+  .post h3 {
+    font-size: 15pt;
+    font-weight: bold;
+    color: #353535;
+    margin-bottom: 2px; }
+  .post .comments {
+    border-top: 1px solid black;
+    margin-top: 10px; }

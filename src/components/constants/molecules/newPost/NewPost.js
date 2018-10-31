@@ -73,7 +73,7 @@ class NewPost extends Component {
         return (
             <Mutation mutation={addPost} update={(cache, data) => this.updateCache(cache, data)} >
                 {(addPost) => (
-                    <form onSubmit={(event) => this.submitPost(event, addPost)} className="card new_post">
+                    <form onSubmit={(event) => this.submitPost(event, addPost)} className="card new_post post">
                         <input 
                             type="text" 
                             placeholder="title" 
