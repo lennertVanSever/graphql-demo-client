@@ -1,3 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default ({data}) => <h4 className="author_name">{data.first_name} {data.last_name}</h4>;
+export default ({data: { first_name, last_name, id }}) => (
+    <h4 className="author_name">
+        <Link to={`/author/${id}`} >{first_name} {last_name}</Link>
+    </h4>
+);

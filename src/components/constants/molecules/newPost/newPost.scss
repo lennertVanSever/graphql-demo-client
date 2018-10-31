@@ -1,0 +1,9 @@
+.new_post {
+    input[type="text"], textarea{
+        width: calc(100% - 10px);
+    } 
+    input[type="submit"], textarea{
+        margin-top: 5px;
+        margin-bottom: 0px;
+    } 
+}

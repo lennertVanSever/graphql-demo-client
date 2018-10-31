@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from "react-router-dom";
-import { Overview } from "./components/containers";
+import { Overview, Author } from "./components/containers";
 
 
 class Routes extends Component {
@@ -8,6 +8,7 @@ class Routes extends Component {
     return (
         <Switch>
             <Route path="/overview" component={Overview} />
+            <Route exact path="/author/:id" component={Author} />
         </Switch>
     );
   }
