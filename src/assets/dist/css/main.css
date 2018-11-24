@@ -120,3 +120,58 @@ input[type="submit"] {
     justify-content: space-evenly;
     height: 40px;
     align-items: center; }
+
+.main_chat {
+  height: calc(100vh - 52px); }
+
+.conversation_wrapper {
+  max-width: 700px;
+  margin: auto;
+  border: 1px solid black;
+  background-color: white;
+  height: calc(100% - 5px); }
+  .conversation_wrapper .participant_info {
+    padding: 10px;
+    border-bottom: 1px solid black; }
+  .conversation_wrapper .messages {
+    height: calc(100% - 100px);
+    position: relative;
+    border-bottom: 1px solid black;
+    overflow: auto; }
+    .conversation_wrapper .messages .message_wrapper {
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 20px);
+      margin: 10px;
+      box-sizing: border-box; }
+      .conversation_wrapper .messages .message_wrapper .message {
+        background-color: #3578e5;
+        color: white;
+        min-width: 100px;
+        width: auto;
+        max-width: 50%;
+        border-radius: 10px;
+        margin-top: 15px;
+        float: left;
+        clear: both; }
+        .conversation_wrapper .messages .message_wrapper .message p {
+          padding: 10px; }
+        .conversation_wrapper .messages .message_wrapper .message--right {
+          float: right;
+          background-color: #BBB; }
+          .conversation_wrapper .messages .message_wrapper .message--right p {
+            text-align: right;
+            color: black; }
+  .conversation_wrapper .new_message {
+    display: flex;
+    align-items: center;
+    height: 46px; }
+    .conversation_wrapper .new_message input[type="text"] {
+      border: none;
+      outline: none;
+      width: calc(100% - 72px); }
+    .conversation_wrapper .new_message button {
+      background-color: #3578e5;
+      color: white;
+      border: none;
+      padding: 5px 10px; }
