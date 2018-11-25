@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import gql from "graphql-tag";
-import query from "../../../queries/conversation";
 import { Mutation } from "react-apollo";
 
 const addMessage = gql`
@@ -16,7 +15,7 @@ const addMessage = gql`
     }
 `;
 
-function submitMessage(event, addMessage, message, setMessage) {
+function submitMessage(event, addMessage, message, setMessage, lastId) {
   event.preventDefault();
   setMessage('');
   addMessage({
@@ -26,24 +25,18 @@ function submitMessage(event, addMessage, message, setMessage) {
         author_id: 1,
         conversation_id: 1
       } 
-    },
-    refetchQueries: [{
-      query,
-      variables: {
-        id: 1
-      }
-    }],
+    }
   })
 }
 
-export default () => {
+export default ({ lastId }) => {
   const [message, setMessage] = useState('');
   return (
     <Mutation mutation={addMessage}>
       {(addMessage) => (
         <form 
           className="new_message"
-          onSubmit={(event) => submitMessage(event, addMessage, message, setMessage)} 
+          onSubmit={(event) => submitMessage(event, addMessage, message, setMessage, lastId)} 
         >
           <input
             value={message}

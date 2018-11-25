@@ -17,6 +17,7 @@ function generateParticipants(participants) {
         </div>
       );
     }
+    return null;
   })
 }
 
