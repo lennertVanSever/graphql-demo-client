@@ -7,7 +7,7 @@ import Routes from "./Routes";
 import "./assets/dist/css/main.css";
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql"
+  uri: "http://localhost:4001/graphql"
 });
 
 class App extends Component {
